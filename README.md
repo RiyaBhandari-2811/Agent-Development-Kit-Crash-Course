@@ -9,7 +9,7 @@ Learning the ADK through a crash course this repository contains all the project
 You only need to create one virtual environment for all examples in this course. Follow these steps to set it up:
 
 ```bash
-# Create virtual environment in the root directory
+.venv\Scripts\Activate.ps1# Create virtual environment in the root directory
 python -m venv .venv
 
 # Activate (each new terminal)
