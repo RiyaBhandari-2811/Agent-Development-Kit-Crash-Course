@@ -1,8 +1,15 @@
 from google.adk.agents import Agent
 
-root_agent = Agent(
-    model='gemini-2.0-flash-001',
-    name='root_agent',
-    description='A helpful assistant for user questions.',
-    instruction='Answer user questions to the best of your knowledge',
+question_answering_agent = Agent(
+    name="question_answering_agent",
+    model="gemini-2.0-flash",
+    description="Question answering agent",
+    instruction="""
+    You are a helful assistant that answers questions about the user's preferences.
+    Here is some information about the user:
+    Name: 
+    {user_name}
+    Preferences:
+    {user_preferences}
+    """,
 )
